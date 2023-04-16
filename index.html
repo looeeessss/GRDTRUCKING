@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title>GRD Trucking Inc.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<link href="/font-awesome/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo-attempt.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+				
+                <ul>
+                    <li><a href="index.html">HOME</a></li> 
+                    <li><a href="services.html">SERVICES</a></li> 
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="careers.html">CAREERS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onClick="showMenu()"></i>
+        </nav>
+		<div class="text-box">
+            <h1>DELIVERING SUCCESS YOUR WAY</h1>
+			<p>Providing the best transportation for freight across <br>the Southern California region.
+			</p>
+			<a href="" class="hero-btn">CONTACT US FOR RATES</a>	
+		</div>
+		</section>
+    <!----- Services we offer ------>
+    <section class="services">
+        <h1>services we offer</h1>
+          <h2>Expedited Solutions</h2>
+    <p>Expedited transportation of freight over any distance.</p>
+ 
+    <h2>Dedicated Solutions</h2>
+    <p>Dedicated fleet solutions for shippers.</p>
+     <h2>FTL/LTL</h2>
+    <p>Full Truck Load and Less than Truckload.</p>
+</section>
+         <!-----LOCATION ------>
+    <section class="location">
+        <h1>OUR LOCATION</h1>
+            <p>Centrally located in the Southern California Region</p>
+            <img src="images/LOCATION.PNG" alt='map';>
+		<p> </p>
+    </section>
+    <!-----Companies we have worked with ------>
+
+    <h>OUR CUSTOMERS</h>
+    <div class="customers">
+        
+        <div class="container">
+            <div class="containeritems">
+                <div class="image">   
+                    <img src='images/smclogo1.png' alt='smc'>
+                </div>
+            </div>
+        </div> 
+        <div class="container">
+            <div class="containeritems">
+                <div class="image">   
+                    <img src='images/transfixlogo.png' alt='transfix'>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="containeritems">
+                <div class="image">   
+                    <img src='images/crstlogo.png' alt='crst'>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="containeritems">
+                <div class="image">   
+                    <img src='images/targetlogo.png' alt='target'>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="containeritems">
+                <div class="image">   
+                    <img src="images/newindy-darklogo.png" alt='newindy'>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="containeritems">
+                <div class="image">   
+                    <img src="images/intpaperlogo.png" alt='intpaper'>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-------JavaScript for Toggle Menu------>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function hideMenu(){
+			navLinks.style.right = "-200px"
+		}
+        function showMenu(){
+			navLinks.style.right = "0"
+        }
+    </script>          
+</body>
+    <footer>
+        ©2023 GRD Trucking, Inc. All Rights Reserved.
+    </footer>
+</html>

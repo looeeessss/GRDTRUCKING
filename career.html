@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title>GRD Trucking Inc.</title>
+    <link rel="stylesheet" href="styleabout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<link href="/font-awesome/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo-attempt.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+				
+                <ul>
+                    <li><a href="index.html">HOME</a></li> 
+                    <li><a href="services.html">SERVICES</a></li> 
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="careers.html">CAREERS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onClick="showMenu()"></i>
+        </nav>
+		<div class="header-box">
+            <h1>GRD TRUCKING INC</h1>
+		</div>
+		</section>
+        <div class="about">
+            <div class="row">
+              <div class="col-md-6"><br>
+                <h2>ABOUT US</h2><br>  
+                <p>GRD Trucking was founded in 2017 by our President Harpal “Paul” Singh with just one truck owned and operated by himself.
+                    <br>His reputation in the industry and unwavering desire for customer service created what is now an award-winning Transportation Company.
+                    <br>GRD Trucking's on-time record is proven as we were awarded 2022 Carrier of the Year by Transfix with a 98% on time delivery rate.</p>
+                    <br><br>
+
+              </div>
+              <div class="col-md-6">
+                <img src="images/GRDTRUCKS.JPG" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="pictures">
+        
+            <div class="gallery">
+                <div class="gallerycontainer">
+                    <div class="galleryimage">   
+                        <img src='images/multtrucks.JPG' alt='smc'>
+                    </div>
+                </div>
+            </div> 
+            <div class="gallery">
+                <div class="gallerycontainer">
+                    <div class="galleryimage">   
+                        <img src='images/truck19.png' alt='transfix'>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallerycontainer">
+                    <div class="galleryimage">   
+                        <img src='images/traileronly.JPG' alt='crst'>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallerycontainer">
+                    <div class="galleryimage">   
+                        <img src='images/trailers.JPG' alt='target'>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+	<!-------JavaScript for Toggle Menu------>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function hideMenu(){
+			navLinks.style.right = "-200px"
+		}
+        function showMenu(){
+			navLinks.style.right = "0"
+        }
+    </script>          
+</body>
+    <footer>
+        ©2023 GRD Trucking, Inc. All Rights Reserved.
+    </footer>
+</html>

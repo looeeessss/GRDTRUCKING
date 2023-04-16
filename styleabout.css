@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    font: 'Exo';
+    text-align: center;
+    
+}
+.header{
+    min-height: 60vh;
+    width: 100%;
+    font-size: 90px;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.7)),url(images/GRDTRUCKS.JPG);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    background-color:  rgba(77, 132, 134, 0.856);
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 325px
+}
+.nav-links ul li{
+    flex: 100;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #FFF;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+.header-box{
+	width: 95%;
+    font-weight: bold;
+    font-style: italic;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+    font-variant: small-caps
+    
+}
+.about {
+    background-color: rgba(186, 194, 216, 0.26);
+}
+.row{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+  }
+  img {
+    max-width: auto;
+    max-height: 50vh;
+  }
+  h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    font-style: italic;
+
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+nav .fa{
+	display: none;
+}
+.services{
+    background: #000000;
+    color: #fff;
+    text-align: center;   
+    padding-bottom: 35px
+}
+.services h1{
+    font-size: 55px;
+    font-variant-caps:small-caps;
+    padding: 10px;
+}
+.services p{
+    bottom: 10px;
+}
+.pictures {
+    background-color: rgba(186, 194, 216, 0.26);
+    font-size: 80px;
+}
+.gallery{
+    
+    display: inline-block;
+    grid-auto-rows: 100px 300px;
+    grid-gap: 10px;
+    place-items: center;
+    place-content: center;
+    font-size: 80px;
+    
+}
+.gallery{
+    width: auto;
+    height: 250px;
+    place-items: center;
+    object-position: center;
+    text-align: center;
+}
+.gallerycontainer .galleryimage{
+    width: auto;
+    height: 250px;
+    overflow: hidden;
+    place-items: center;
+    object-position:center;
+}
+.gallerycontainer .galleryimage img{
+    width: auto;
+    height: 250px;
+    transform: scale(.8);
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+.gallerycontainer .galleryimage img:hover{
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+	
+} 
+.footer{
+    background-color: rgba(186, 194, 216, 0.26);
+    font-size: 12px;
+    padding-top: 40px;
+    color: #000000; 
+}
+@media(max-width:700px){ 
+	.text-box h1{
+		font-size: 20px
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		background: rgb(89, 107, 173);
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+        transition: 0.8s;
+	}
+	nav .fa{
+		display: block;
+		color: #fff;
+		margin: 10px;
+		font-size: 20px;
+		cursor: pointer;
+	}
+    .nav-links ul{
+        padding: 15px
+    }
+    .about {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+      }
+}
+	
